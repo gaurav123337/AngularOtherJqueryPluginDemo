@@ -1,0 +1,18 @@
+[
+    {
+        "name":"msgName", 
+        "type":"0",       
+        "derived":"1",
+        "desc":"x",
+        "check":true      
+       
+    },
+     {
+        "name":"msgName123",
+        "type":"0",
+        "derived":"1",
+        "desc":"z",
+        "check":false        
+
+    }
+]

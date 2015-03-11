@@ -1,0 +1,16 @@
+[
+    {
+        "name":"msgName",        
+        "type":"0",
+        "desc":"",
+        "check":false
+      
+    },
+     {
+        "name":"msgName123",
+        "type":"2",
+        "desc":"",  
+        "check":true      
+       
+    }
+]

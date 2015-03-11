@@ -1,0 +1,45 @@
+<!--<div class="container-fluid">-->
+    <div class="existingInfo">
+      <table class='showJsonData'>
+        <thead>
+          <tr>
+            <td>
+              Name
+            </td>
+            <td>
+              Type
+            </td>
+            <td>
+              Flage
+            </td>
+            <td>
+              Size
+            </td>
+            <td>
+              Default Value
+            </td>
+        </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="phone in phones">
+            <td >
+              {{phone.text}}
+            </td>
+            <td >
+              {{phone.type}}
+            </td>
+            <td >
+              {{phone.flag}}
+            </td>
+             <td >
+              {{phone.size}}
+            </td>
+            <td >
+              {{phone.optional}}
+            </td>
+          </tr>
+        </tbody>
+      </table>            
+    </div>
+  </div>
+<!--</div>-->

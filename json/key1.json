@@ -1,0 +1,14 @@
+[
+	{
+	    name:"name",
+	    display:"Name",
+	    type:"text",
+	    ctrlAttr:{
+	        "maxlength":100
+	    },
+	    ctrlCss:{
+	        "width":"160px"
+	    }
+  }
+  
+]

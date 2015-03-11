@@ -1,0 +1,158 @@
+/*Basic style*/
+/*@import url(http://fonts.googleapis.com/css?family=Roboto:400,100);*/
+.container{
+  overflow:auto;
+}
+a{
+  text-decoration: none;
+}
+a:hover{
+  color:#888888;
+}
+li{
+  list-style-type: none;
+}
+li a{
+  padding: 5px;
+  background: #ececec;
+  border-radius: 5px;
+  margin: 2px;
+  display: block;
+  width:auto;
+}
+.footer{
+  background: #000000;
+    clear: both;
+    padding: 0;
+    text-align: center;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 0;
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+
+}
+
+.footer p{
+  color: #ffffff;
+  text-align: center;
+  padding: 10px;
+}
+.subMenu{
+  display:none;
+}
+.rightPanel{
+  min-height:500px; 
+}
+/*Basic style ends here*/
+.header{
+  overflow: auto;
+  background: #003300;
+  padding: 2px 5px;
+}
+.header p{
+  float: left;
+  width:16%;
+  color: #ffffff;
+}
+.header p a{
+  color: #ffffff;
+  float:right;
+}
+.header p:nth-child(2),.header p:nth-child(3),.header p:nth-child(4){
+  text-align: center;
+}
+.header p:nth-child(5) a{
+  float: right;
+}
+.leftPanel{
+  float: left;
+  width:20%;
+  border:2px solid #ececec;
+  margin:0px 5px;
+}
+.rightPanel{
+   float: right;
+   width:78%;
+   border:2px solid #ececec;
+   padding: 2px;
+}
+.listEvents input[type="text"] {
+   display: block;
+}
+.listEvents p input[type="text"] {
+   float: left;
+}
+
+/*css for event info*/
+.eventInfo p span:nth-child(1) label,.entityInfo p span:nth-child(1) label{
+  width: 300px;
+  width: 51%;
+}
+.leftPanel{
+  height: 500px ;
+  overflow: auto;
+}
+.adjustPosition{
+  width:78%;
+  height:700px;
+  /*float: right;
+  padding: 0px 5px;*/
+  overflow: auto;  
+}
+.entityMaker input[type="text"]{
+  margin-bottom: 5px;
+}
+.entityInfo h3{
+  background: #EDD284;
+  padding: 5px;
+  margin-top: 10px;
+}
+.entityMaker{
+  border:2px solid #cccccc;
+  padding: 2px;
+
+}
+.entityMaker .date{
+  width: 169px;
+}
+.keyInfo .heading{
+  background: #3baae3 url(images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+  overflow: auto;
+  padding: 5px;
+}
+.keyInfo h4{
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.attributesInfo .heading{
+  background: #3baae3 url(images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+  overflow: auto;
+  padding: 5px;
+}
+.attributesInfo h4{
+  float: left;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*Bootstrap button*/
+.btn-default{
+  float: right;
+}
+/*append grid table*/
+.appendGrid.ui-widget{
+  width:100%;
+}
+/*Enevt information*/
+.entityInfo p span{
+  width: 30%;
+  display: inline-block;
+}
+/*existingInfo placeholder*/
+.existingInfo{
+  height:200px;
+  width: auto;
+  border: 1px solid #888888;
+}

@@ -1,0 +1,237 @@
+typedefs {
+	EntityTypes {
+		type : string
+		pattern-match = [
+			"string:[0-9]+",
+			"char",
+			"number:[0-9]+",
+			"decimal:[0-9]+,[0-9]+"
+			"created-on",
+			"created-by",
+			"updated-on",
+			"updated-by",
+			"verified-by",
+			"verified-on",
+			"rvn",
+			"date",
+			"timestamp",
+			"clob",
+			"blob"
+		]
+	}
+	EventTypes {
+		type : string
+		pattern-match = [
+			"string", "char", "number", "decimal" "date", "timestamp"
+		]
+	}
+	entityType {
+		type = structure
+		_attrs = [
+			{
+				name : db-name, 
+				type: 'string:50'
+				optional = true, 
+				desc : 'Name of the database table', 
+			}
+			{
+				name : generate, 
+				type: boolean
+				optional = true
+				default = false
+				desc : 'Whether to generate or not'
+			}
+			{
+				name : db_column_quoted
+				type : boolean
+				optional = true
+				default = true
+			}
+			{
+				name : attributes
+				type : table
+				list-append = true
+				_attrs = [
+					{
+						name : name,
+						type : 'string:50'
+					}
+					{
+						name : column,
+						type : 'string:50',
+						optional = true,
+						default = this.name
+					}
+					{
+						name : type,
+						type : EntityTypes
+					}
+					{
+						name : key,
+						type : boolean,
+						optional : true
+						default : false
+					}
+				]
+			}
+			{
+				name : criteria-query
+				type : structure
+				_attrs = [
+					{
+						name : name
+						type : 'string:20'
+					}
+					{
+						name : summary
+						type : 'list:string'
+						choices : this.parent.attributes.name
+					}
+					{
+						name : where
+						type : structure
+						_attrs = [
+							{
+								name : category
+								choices : [ equal-clause, less-clause ]
+							}
+							{
+								name : code
+								choices : [ equal-clause, less-clause ]
+							}
+							{
+								name : value
+								choices : [ equal-clause, less-clause ]
+							}
+						]
+					}
+					{
+						name : order
+						type : "list:string"
+					}
+				]
+			}
+			{
+				name : indexes
+				type : 'map:nvp'
+				nvp {
+					name {
+						desc : 'Enter name of index'
+						type : 'string:50'
+					}
+					value {
+						desc : 'Enter list of column'
+						type : 'list:string'
+					}
+				}
+			}
+			{
+				name : seed
+				type : 'list:list:string'
+			}
+		]
+	}
+	viewType {
+		type : structure
+		_attrs = [
+			{
+				name : db_column_quoted
+				type : boolean
+				default : true
+			}
+			{
+				name : entity
+				type : 'map:nvp'
+				nvp {
+					name-desc : 'Name of the entity'
+					value-desc : 'Path of the entity'
+				}
+			}
+			{
+				name : union
+				type : 'map:nvp'
+				nvp {
+					name { desc : 'Name of the table' }
+					value { desc : 'Path of the table' }
+				}
+			}
+			{
+				name : attributes
+				type : 'list:structure'
+				list-append = true
+				_attrs = [
+					{
+						name : name
+						type : 'string:50'
+					}
+					{
+						name : mapping
+						type : 'string:100'
+						desc : 'Object.attribute mapping'
+					}
+					{
+						name : key
+						type : boolean
+						default : false
+					}
+					{
+						type : nvp
+						validation : View.validate
+						optional = true
+					}
+				]
+			}
+			{
+				name : derived-attributes
+				type : 'list:structure'
+				list-append = true
+				_attrs = [
+					{
+						name : name
+						type : 'string:50'
+					}
+					{
+						name : type
+						type : ViewTypes
+					}
+					{
+						name : derivation
+						type : text
+					}
+				]
+			}
+			{
+				name : criteria-query
+				type : structure
+				_attrs = [
+					{
+						name : name
+						type : 'string:50'
+					}
+					{
+						name : summary
+						type = 'list:string'
+					}
+					{
+						name : where
+						type : 'map:nvp'
+						nvp {
+							name {
+								desc : "Column Name"
+								choice : this.parent.parent.attributes.name
+							}
+							value {
+								desc : "Clause"
+								choice : [ equal-clause, less-clause ]
+							}
+						}
+					}
+					{
+						name : order
+						type : 'list:string'
+					}
+				]
+			}
+		]
+	}
+]

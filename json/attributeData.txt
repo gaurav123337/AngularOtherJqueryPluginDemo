@@ -1,0 +1,14 @@
+[
+    {
+        "name":"msgName",
+        "desc":"",
+        "type":"",
+        "column":"EVENT"
+    },
+     {
+        "name":"msgName123",
+        "desc":"",
+        "type":"",
+        "column":"EVENT123"
+    }
+]

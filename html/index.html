@@ -1,0 +1,102 @@
+<!doctype html>
+<!--<html ng-app="phonecatApp">-->
+<html >
+<head>
+ 
+
+
+ <link rel="stylesheet" href="../css/bootstrap.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="../css/indexstyle.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="../css/jQueryAppendgridv1.1.1.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="../css/jQueryTheme.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="../css/jQueryStructure.css" media="screen" type="text/css" />
+  <link rel="stylesheet" href="../css/custom.css" media="screen" type="text/css" />
+
+
+  
+   
+
+<link rel="stylesheet" href="../css/pluginCss/nivo/nivo-slider.css" media="screen" type="text/css" />
+  <!--<link rel="stylesheet" href="/jsDemo/dist/themes/default/style.css" />
+
+  <link rel="stylesheet" href="../css/fonts/css/font-awesome.min.css">-->
+
+
+ 
+</head>
+<body ng-app="eventApp">
+  <div class="header">
+    <p>Hi Dev!</p>
+    <p>Rustam</p>
+    <p>1.0</p>
+    <p><span>Dev</span></p>
+    <p><span>Bank</span><span style="padding:0px 0px 0px 5px; "><select><option value="0">Choose Bank</option><option value="1">IB</option><option value="2">KOTAK</option><option value="3">ICICI</option></select>
+    <p><a href="../html/login.html">Logout</a></p>
+    </span></p>
+  </div>
+  <!--<a href="#/phones" class="thumb">click</a>-->
+  <div class="leftPanel">
+      <div id="nav"></div>
+  </div>
+  <div class="rightPanel1 show">
+    <ul>
+      <li>
+        <a href="#/phones" class="thumb">Event List</a>
+      </li>
+      
+      <li>
+        <a href="#/photo" class="thumb">Image Slide Demo</a>
+      </li>
+      <li>
+        <a href="#/nivo" class="thumb">Nivo Demo</a>
+      </li>
+      <li>
+        <a href="#/grid" class="thumb">Append Grid Demo</a>
+      </li>
+    </ul>
+    <div ng-view>
+      
+    </div>
+    <!-- Table for event list append grid 
+    <table id="tblAppendGrid123">
+    </table>-->
+  </div>
+ <!--Angular related js-->
+  <script src="../js/angular/angular.js"></script>
+  <script src="../js/angular/angular-route.js"></script>
+
+<script src="../js/pluginJs/jquerymin.js"></script>
+<script src="../js/pluginJs/jquery.slides.min.js"></script>
+<script type="text/javascript" src="../js/pluginJs/jquery.nivo.slider.js"></script>
+
+  <!--App related js-->
+  <script src="../js/app.js"></script>
+  <script src="../js/controllers/controllers.js"></script>
+  <script src="../js/filters/filter.js"></script>
+
+  <!--plugin related js -->
+  <script src="../js/pluginJs/jqueryUi.js"></script>
+  <script src="../js/pluginJs/appendGrid/jquery.appendGrid.js"></script>
+  <!--<script>  
+  $(function () {
+    // Initialize appendGrid
+    $('#tblAppendGrid123').appendGrid({
+        caption: 'My CD Collections',
+        initRows: 1,
+        columns: [
+                { name: 'Album', display: 'Album', type: 'text', ctrlAttr: { maxlength: 100 }, ctrlCss: { width: '160px'} },
+                { name: 'Artist', display: 'Artist', type: 'text', ctrlAttr: { maxlength: 100 }, ctrlCss: { width: '100px'} },
+                { name: 'Year', display: 'Year', type: 'text', ctrlAttr: { maxlength: 4 }, ctrlCss: { width: '40px'} },
+                { name: 'Origin', display: 'Origin', type: 'select', ctrlOptions: { 0: '{Choose}', 1: 'Hong Kong', 2: 'Taiwan', 3: 'Japan', 4: 'Korea', 5: 'US', 6: 'Others'} },
+                { name: 'Poster', display: 'With Poster?', type: 'checkbox' },
+                { name: 'Price', display: 'Price', type: 'text', ctrlAttr: { maxlength: 10 }, ctrlCss: { width: '50px', 'text-align': 'right' }, value: 0 },
+                { name: 'RecordId', type: 'hidden', value: 0 }
+            ]
+    });
+  
+   
+});
+  </script>-->
+</body>
+
+</html>

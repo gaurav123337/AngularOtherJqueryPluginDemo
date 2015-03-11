@@ -1,0 +1,42 @@
+p{
+	margin:0px;
+}
+
+.rightPanel1{
+	display: none;
+}
+/*styles for dynamic data table */
+.showJsonData{
+  width:100%;
+  padding: 2px;
+  border-collapse: separate;
+}
+.showJsonData thead{
+  font-weight: 600;
+}
+.showJsonData tr td{
+  border: 1px solid #888888;
+}
+/*styles for custom Button*/
+.cButton{
+	border: 1px solid #aed0ea;
+	background: #d7ebf9 url(images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x;
+	font-weight: 700;
+	color: #2779aa;
+	border-radius: 6px;
+}
+.showJsonData thead{
+	background: #3baae3 url(images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+}
+.rightPanel1{
+	width:78%;
+	float:right;
+}
+.rightPanel1.show ul{
+	overflow:auto;
+	display: table;
+}
+.rightPanel1.show ul li{
+	float: left;
+	display: table-row;
+}

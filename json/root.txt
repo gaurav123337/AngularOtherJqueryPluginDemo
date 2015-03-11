@@ -1,0 +1,136 @@
+    [
+    {
+        "id": 1,
+        "text": "Global Types"
+
+    },
+    {
+        "id": 2,
+        "text": "List of Hosts",
+        "children":[
+        	{
+        		"id": 21,
+        		"text": "CBS",
+        		"children":[
+        			{
+        				"id": 211,
+                		"text": "Events",
+                		"children":[
+                			{
+                				"id": 2111,
+                				"text": "FT_AccountTxnEvent",
+                                "icon" : "jstree-file"
+                			},
+                			{
+                				"id": 2112,
+                				"text": "NFT_MobileNumChange",
+                                "icon" : "jstree-file"
+
+                			}
+                		]
+
+        			},
+        			{
+        				"id": 212,
+                		"text": "Entities",
+                		"children":[
+                			{
+                				"id": 2121,
+                				"text": "customer",
+                                "icon" : "jstree-file"
+                			},
+                			{
+                				"id": 2122,
+                				"text": "TDA",
+                                "icon" : "jstree-file"
+                			},
+                			{
+                				"id": 2123,
+                				"text": "DDA",
+                                "icon" : "jstree-file"
+                			}
+                		]
+
+        			}
+                ]
+
+        	},
+        	{
+        		"id": 22,
+        		"text": "IB",
+        		"children":[
+        			{
+        				"id": 221,
+                		"text": "Events",
+                		"children":[
+                			{
+		                		"id": 2221,
+		                		"text": "IB_Fund_Transfer",
+                                "icon" : "jstree-file"
+		                	},
+		                	{
+		                		"id": 2222,
+		                		"text": "IB_Login",
+                                "icon" : "jstree-file"
+		                	},
+		                	{
+		                		"id": 2223,
+		                		"text": "IB_Payee_Registration",
+                                "icon" : "jstree-file"
+		                	}
+                		]
+
+        			},
+        			{
+        				"id": 222,
+                		"text": "Entities"
+
+        			}
+                ]
+
+        	},
+        	{
+                "id": 23,
+                "text": "CARD",
+                "children":[
+                	{
+                		"id": 231,
+        				"text": "Events",
+        				"children":[
+        					{
+        						"id": 2311,
+                				"text": "POS_TxnEvent",
+                                "icon" : "jstree-file"
+        					},
+        					{
+        						"id": 2322,
+                				"text": "NFT_CardPinChangeEvent",
+                                "icon" : "jstree-file"
+        					}
+        				]
+                	},
+                	{
+                		"id": 232,
+        				"text": "Entities",
+        				"children":[
+        					{
+        						"id": 2321,
+        						"text": "Account",
+                                "icon" : "jstree-file"
+        					},
+        					{
+        						"id": 2322,
+        						"text": "Device ID",
+                                "icon" : "../jsDemo/dist/themes/default/event.png"
+        					}
+        				]
+                	}
+                ]
+            }
+
+        ]
+
+    }
+]
+
+

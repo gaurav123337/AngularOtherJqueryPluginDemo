@@ -1,0 +1,53 @@
+[
+    {
+       
+        "text": "eventId",
+        "type":"",
+        "flag":"base",
+        "size":"200",
+        "optional":""
+        
+    },
+    {
+        
+        "text": "eventTs",
+        "type":"Timestamp",
+        "flag":"base",
+        "size":"",
+        "optional":"true"
+
+        
+    },
+    {
+        
+        "text": "eventName",
+        "type":"String",
+        "flag":"customized",
+        "size":"50",
+        "optional":"true"      
+    },
+    {
+        
+        "text": "eventSource",
+        "type":"String",
+        "flag":"base",
+        "size":"100",
+        "optional":"true"      
+    },     
+    {
+        
+        "text": "source",
+        "type":"String",
+        "flag":"base",
+        "size":"100",
+        "optional":"false"      
+    }, 
+    {
+        
+        "text": "userId",
+        "type":"userIdType",
+        "flag":"customized",
+        "size":"",
+        "optional":"false"      
+    }
+]
